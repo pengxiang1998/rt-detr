@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <style>
+        #addCommodityIndex {
+            text-align: center;
+            width: 300px;
+            height: 340px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -200px 0 0 -200px;
+            border: solid #ccc 1px;
+            padding: 35px;
+        }
+        
+        #imghead {
+            cursor: pointer;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"  crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="addCommodityIndex">
+        <h2>目标检测</h2>
+        <div class="form-group row">
+            <form id="upload"  action="/upload" enctype="multipart/form-data" method="POST">
+                <img src="">
+                <div class="form-group row">
+                    <label>上传图像</label>
+                    <input type="file" class="form-control"  name='file'>
+                </div>
+                <div class="form-group row">
+                    <label>选择置信度</label>
+                    <select class="form-control" name="score" id="exampleFormControlSelect1">
+                        <option value="0.5">0.5</option>
+                        <option value="0.6">0.6</option>
+                        <option value="0.7">0.7</option>
+                        <option value="0.8">0.8</option>
+                        <option value="0.9">0.9</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                <div class="btn"><input type="submit" class="btn btn-success" value="提交图像" /></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

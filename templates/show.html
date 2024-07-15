@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <style>
+        #addCommodityIndex {
+            text-align: center;
+            position: absolute;
+            left: 40%;
+            top: 50%;
+            margin: -200px 0 0 -200px;
+            border: solid #ccc 1px;
+
+        }
+
+        #imghead {
+            cursor: pointer;
+        }
+        .result {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"  crossorigin="anonymous">
+</head>
+
+<body>
+
+<div id="addCommodityIndex">
+<div class="card mb-3" style="max-width: 680px;">
+    <div class="row no-gutters">
+        <div class="col-md-5">
+            <img src="../static/img/result.jpg" class="result">
+        </div>
+        <div class="col-md-5">
+            <div class="card-body">
+                <h5 class="card-title">检测结果</h5>
+                <p class="card-text">目标数量：{{num}}</p>
+                <p class="card-text">检测速度：{{fps}} 帧/秒</p>
+                <a  href="/home" class="btn btn-success">继续提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
